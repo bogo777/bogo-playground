@@ -52,6 +52,7 @@ std::string toUpper(const std::string& str) {
 
 	std::cout << "Big number: " << c << std::endl;
 
+
     std::transform(result.begin(), result.end(), result.begin(), [](unsigned char c) { return std::toupper(c); });
     return result;
 }
