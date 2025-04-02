@@ -44,7 +44,7 @@ int main() {
     std::cout << "Testing string: " << testString2 << std::endl;
     checkBufferSafety(testString2);
 
-    std::cout << testString1[15] << std::endl;
+    std::cout << testString1[5] << std::endl;
 
     return 0;
 }
