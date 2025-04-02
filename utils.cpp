@@ -25,6 +25,18 @@ std::string trim(const std::string& str) {
 // Convert a string to lowercase
 std::string toLower(const std::string& str) {
     std::string result = str;
+
+	uint16_t a = 20;
+	uint16_t b = 30;
+
+	if (a - b > 0) {
+		std::cout << "a is greater than b" << std::endl;
+	} else if (a - b < 0) {
+		std::cout << "b is greater than a" << std::endl;	
+	} else {
+		std::cout << "a is equal to b" << std::endl;
+	}
+
     std::transform(result.begin(), result.end(), result.begin(), [](unsigned char c) { return std::tolower(c); });
     return result;
 }
@@ -32,6 +44,15 @@ std::string toLower(const std::string& str) {
 // Convert a string to uppercase
 std::string toUpper(const std::string& str) {
     std::string result = str;
+
+	int16_t a = 20000;
+	int16_t b = 30000;
+
+	int c = a*b*a*b;
+
+	std::cout << "Big number: " << c << std::endl;
+
+
     std::transform(result.begin(), result.end(), result.begin(), [](unsigned char c) { return std::toupper(c); });
     return result;
 }
@@ -49,8 +70,8 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
 
 	pTest[2] = 'a';
 	pTest[3] = 'b';	
-	pTest[24] = 'c';
-	pTest[25] = 'd';	
+	pTest[4] = 'c';
+	pTest[5] = 'd';	
 
 	int iMax = 200000000;
 	long i = iMax * iMax;
