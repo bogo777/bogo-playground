@@ -3,6 +3,7 @@
 #include <cctype>
 #include <vector>
 #include <sstream>
+#include <iostream>
 
 // Trim whitespace from the start of a string
 std::string ltrim(const std::string& str) {
@@ -44,10 +45,17 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
         tokens.push_back(token);
     }
 
-	char* pTest = NULL;
+	char pTest[12] = {};
 
 	pTest[2] = 'a';
 	pTest[3] = 'b';	
+	pTest[24] = 'c';
+	pTest[25] = 'd';	
+
+	int iMax = 200000000;
+	long i = iMax * iMax;
+
+	std::cout << "Big number: " << i << std::endl;
 
     return tokens;
 }
