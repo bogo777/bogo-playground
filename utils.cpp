@@ -25,6 +25,18 @@ std::string trim(const std::string& str) {
 // Convert a string to lowercase
 std::string toLower(const std::string& str) {
     std::string result = str;
+
+	unsigned short a = 20;
+	unsigned short b = 30;
+
+	if (a - b > 0) {
+		std::cout << "a is greater than b" << std::endl;
+	} else if (a - b < 0) {
+		std::cout << "b is greater than a" << std::endl;	
+	} else {
+		std::cout << "a is equal to b" << std::endl;
+	}
+
     std::transform(result.begin(), result.end(), result.begin(), [](unsigned char c) { return std::tolower(c); });
     return result;
 }
@@ -32,6 +44,14 @@ std::string toLower(const std::string& str) {
 // Convert a string to uppercase
 std::string toUpper(const std::string& str) {
     std::string result = str;
+
+	short a = 20000;
+	short b = 30000;
+
+	int c = a*b*a*b;
+
+	std::cout << "Big number: " << c << std::endl;
+
     std::transform(result.begin(), result.end(), result.begin(), [](unsigned char c) { return std::toupper(c); });
     return result;
 }
