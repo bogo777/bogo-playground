@@ -26,8 +26,8 @@ std::string trim(const std::string& str) {
 std::string toLower(const std::string& str) {
     std::string result = str;
 
-	uint16_t a = 20;
-	uint16_t b = 30;
+	unsigned short a = 20;
+	unsigned short b = 30;
 
 	if (a - b > 0) {
 		std::cout << "a is greater than b" << std::endl;
@@ -45,8 +45,8 @@ std::string toLower(const std::string& str) {
 std::string toUpper(const std::string& str) {
     std::string result = str;
 
-	int16_t a = 20000;
-	int16_t b = 30000;
+	unsigned short a = 20000;
+	unsigned short b = 30000;
 
 	int c = a*b*a*b;
 
@@ -73,7 +73,7 @@ std::vector<std::string> split(const std::string& str, char delimiter) {
 	pTest[4] = 'c';
 	pTest[5] = 'd';	
 
-	int iMax = 200000000;
+	short iMax = 10000000;
 	long i = iMax * iMax;
 
 	std::cout << "Big number: " << i << std::endl;
