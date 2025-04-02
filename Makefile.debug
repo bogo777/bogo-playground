@@ -1,0 +1,11 @@
+CXX = g++.exe
+CXXFLAGS = -g -Wall -Wextra -pedantic
+TARGET = main_debug
+
+all: $(TARGET)
+
+$(TARGET): main.cpp
+	$(CXX) $(CXXFLAGS) -o $(TARGET) main.cpp
+
+clean:
+	del $(TARGET).exe

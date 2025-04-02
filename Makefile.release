@@ -1,0 +1,12 @@
+CXX = g++.exe
+CXXFLAGS = -O2 -Wall -Wextra -pedantic -DWITH_UTILS
+TARGET = main_release
+SOURCES = main.cpp utils.cpp
+
+all: $(TARGET)
+
+$(TARGET): $(SOURCES)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SOURCES)
+
+clean:
+	del $(TARGET).exe
